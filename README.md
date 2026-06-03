@@ -98,6 +98,7 @@ The app currently has two main models:
 - `Movie`: stores title, release year, stock count, daily rate, genre, creation date, and description.
 
 ## Roadmap
+<<<<<<< HEAD
 
 Planned improvements to make the project stronger for real use and for a CV:
 
@@ -120,3 +121,5 @@ Built a Django media catalog and stock management application with movie listing
 ## Status
 
 This project is currently in development. The first version works as a movie catalog and stock tracker, and future versions will expand it into a full media storage platform.
+=======
+>>>>>>> 1260f79bd0bc843e4688606b920ae590460e4032
