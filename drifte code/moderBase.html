@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ترميز الصفحة لدعم العربية والإنجليزية -->
+    <meta charset="UTF-8" />
+
+    <!-- يجعل الصفحة Responsive على الموبايل -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- اسم الصفحة في التبويب -->
+    <title>MediaVault</title>
+
+    <!-- استدعاء Bootstrap من الإنترنت -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- bg-dark = خلفية داكنة -->
+  <!-- text-light = النص أبيض -->
+  <body class="bg-dark text-light">
+    <!-- ===================== -->
+    <!-- Navbar -->
+    <!-- ===================== -->
+
+    <!-- navbar = شريط تنقل -->
+    <!-- navbar-expand-lg = يتمدد على الشاشات الكبيرة -->
+    <!-- navbar-dark = ألوان مناسبة للخلفية الداكنة -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <!-- container يجعل المحتوى مرتب وفي المنتصف -->
+      <div class="container">
+        <!-- اسم الموقع -->
+        <a class="navbar-brand fw-bold" href="#"> MediaVault </a>
+
+        <!-- زر القائمة في الموبايل -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- عناصر القائمة -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- ms-auto = يدفع القائمة ناحية اليمين -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Movies </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Series </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===================== -->
+    <!-- Hero Section -->
+    <!-- ===================== -->
+
+    <!-- py-5 = مساحة رأسية كبيرة -->
+    <!-- text-center = توسيط النص -->
+    <section class="container py-5 text-center">
+      <!-- display-3 = عنوان كبير جاهز من Bootstrap -->
+      <h1 class="display-3 fw-bold">Welcome to MediaVault</h1>
+
+      <!-- lead = فقرة كبيرة قليلاً -->
+      <!-- text-secondary = لون رمادي -->
+      <p class="lead text-secondary">
+        Organize and manage your media collection.
+      </p>
+
+      <!-- btn = زر -->
+      <!-- btn-primary = لون أزرق جاهز -->
+      <!-- btn-lg = حجم كبير -->
+      <a href="#" class="btn btn-primary btn-lg"> Explore Library </a>
+    </section>
+
+    <!-- ===================== -->
+    <!-- Cards Section -->
+    <!-- ===================== -->
+
+    <section class="container">
+      <!-- row = صف -->
+      <div class="row">
+        <!-- col-md-4 -->
+        <!-- العمود يأخذ 4 من أصل 12 -->
+        <!-- يعني 3 أعمدة في الصف -->
+        <div class="col-md-4">
+          <!-- card = بطاقة جاهزة -->
+          <div class="card bg-secondary text-light">
+            <div class="card-body">
+              <h3 class="card-title">Movies</h3>
+
+              <p class="card-text">Browse all movies.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-secondary text-light">
+            <div class="card-body">
+              <h3 class="card-title">TV Shows</h3>
+
+              <p class="card-text">Track your favorite series.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-secondary text-light">
+            <div class="card-body">
+              <h3 class="card-title">Watchlist</h3>
+
+              <p class="card-text">Save titles for later.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ملف JavaScript الخاص بـ Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
